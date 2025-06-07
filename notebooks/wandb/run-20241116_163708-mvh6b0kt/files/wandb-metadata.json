@@ -1,0 +1,25 @@
+{
+  "os":  "Windows-10-10.0.26100-SP0",
+  "python":  "3.11.9",
+  "startedAt":  "2024-11-16T11:07:18.729176Z",
+  "program":  "c:\\Users\\Jayesh\\OneDrive\\Documents\\Scratch\\notebooks\\dataset_visualization_Modeling.ipynb",
+  "email":  "jayeshpandey754@gmail.com",
+  "root":  "c:\\Users\\Jayesh\\OneDrive\\Documents\\Scratch\\notebooks",
+  "host":  "Plan-B",
+  "username":  "Jayesh",
+  "executable":  "c:\\Users\\Jayesh\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "codePathLocal":  "dataset_visualization_Modeling.ipynb",
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "511312916480",
+      "used":  "187014176768"
+    }
+  },
+  "memory":  {
+    "total":  "7773351936"
+  },
+  "cpu":  {
+    "countLogical":  8
+  }
+}

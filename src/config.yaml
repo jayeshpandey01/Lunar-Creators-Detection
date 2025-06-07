@@ -1,0 +1,149 @@
+# Project Configuration
+project:
+  name: "tiff-classification"
+  description: "TIFF Image Classification Project"
+  version: "1.0.0"
+
+# Data Configuration
+data:
+  train_data_dir: "dataset/split_dataset/train"
+  val_data_dir: "dataset/split_dataset/val"
+  test_data_dir: "dataset/split_dataset/test"
+  img_size: 256
+  num_classes: 1
+  channels: 3
+
+# DataLoader Configuration
+dataloader:
+  batch_size: 32
+  num_workers: 4
+  pin_memory: true
+  prefetch_factor: 2
+  persistent_workers: true
+  shuffle_train: true
+
+# Model Configuration
+model:
+  name: "efficientnet_b0"
+  pretrained: true
+  dropout_rate: 0.3
+  model_path: "models"
+  checkpoint_dir: "checkpoints"
+
+# Training Configuration
+training:
+  seed: 42
+  epochs: 50
+  learning_rate: 3.0e-4
+  weight_decay: 1.0e-2
+  gradient_clip_val: 1.0
+  early_stopping_patience: 5
+  mixed_precision: true
+  accumulate_grad_batches: 1
+
+# Optimizer Configuration
+optimizer:
+  name: "AdamW"
+  beta1: 0.9
+  beta2: 0.999
+  epsilon: 1.0e-8
+
+# Scheduler Configuration
+scheduler:
+  name: "OneCycleLR"
+  max_lr: 3.0e-4
+  pct_start: 0.3
+  div_factor: 25
+  final_div_factor: 1000
+
+# Augmentation Configuration
+augmentation:
+  train:
+    random_resize_crop:
+      scale: [0.8, 1.0]
+    random_rotate90_prob: 0.5
+    flip_prob: 0.5
+    shift_scale_rotate:
+      shift_limit: 0.0625
+      scale_limit: 0.1
+      rotate_limit: 45
+      prob: 0.5
+    elastic_transform:
+      alpha: 120
+      sigma: 6.0
+      alpha_affine: 3.6
+      prob: 0.3
+    grid_distortion_prob: 0.3
+    optical_distortion:
+      distort_limit: 1
+      shift_limit: 0.5
+      prob: 0.3
+    gauss_noise_prob: 0.3
+    brightness_contrast_prob: 0.3
+    hue_saturation_prob: 0.3
+    coarse_dropout:
+      max_holes: 8
+      max_height: 32
+      max_width: 32
+      prob: 0.5
+  normalize:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+
+# Logging Configuration
+logging:
+  log_dir: "logs"
+  save_freq: 1
+  log_freq: 100
+  wandb:
+    enabled: true
+    project: "tiff-classification"
+    entity: "your-username"
+    tags: ["tiff", "classification"]
+    log_model: true
+
+# Validation Configuration
+validation:
+  freq: 1
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+  save_best_model: true
+  metric_for_best_model: "val_loss"
+  mode: "min"
+
+# Testing Configuration
+testing:
+  batch_size: 64
+  tta_enabled: true  # Test Time Augmentation
+  tta_transforms: 5
+  save_predictions: true
+  prediction_dir: "predictions"
+
+# Hardware Configuration
+hardware:
+  gpu_ids: [0]  # List of GPU IDs to use
+  use_cuda: true
+  precision: 16  # 16 for mixed precision, 32 for full precision
+
+# Reproducibility
+reproducibility:
+  deterministic: true
+  benchmark: false
+  seed: 42
+
+# Distributed Training
+distributed:
+  enabled: false
+  backend: "nccl"
+  world_size: 1
+  rank: 0
+
+# Debug Configuration
+debug:
+  enabled: false
+  verbose: false
+  profile: false
+  sample_size: 100

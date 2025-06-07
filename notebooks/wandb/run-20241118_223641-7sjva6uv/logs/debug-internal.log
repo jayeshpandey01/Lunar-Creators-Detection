@@ -1,0 +1,8 @@
+{"time":"2024-11-18T22:36:46.7426469+05:30","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-18T22:36:46.7426469+05:30","level":"INFO","msg":"created symlink","path":"c:\\Users\\Jayesh\\OneDrive\\Documents\\Scratch\\notebooks\\wandb\\run-20241118_223641-7sjva6uv\\logs\\debug-core.log"}
+{"time":"2024-11-18T22:36:46.8600195+05:30","level":"INFO","msg":"created new stream","id":"7sjva6uv"}
+{"time":"2024-11-18T22:36:46.8600195+05:30","level":"INFO","msg":"stream: started","id":"7sjva6uv"}
+{"time":"2024-11-18T22:36:46.8600195+05:30","level":"INFO","msg":"handler: started","stream_id":"7sjva6uv"}
+{"time":"2024-11-18T22:36:46.8600195+05:30","level":"INFO","msg":"sender: started","stream_id":"7sjva6uv"}
+{"time":"2024-11-18T22:36:46.8600195+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"7sjva6uv"}
+{"time":"2024-11-18T22:36:48.0853868+05:30","level":"INFO","msg":"Starting system monitor"}

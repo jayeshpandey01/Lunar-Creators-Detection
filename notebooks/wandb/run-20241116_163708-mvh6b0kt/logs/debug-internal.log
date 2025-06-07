@@ -1,0 +1,20 @@
+{"time":"2024-11-16T16:37:18.198609+05:30","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2024-11-16T16:37:18.1997344+05:30","level":"INFO","msg":"created symlink","path":"c:\\Users\\Jayesh\\OneDrive\\Documents\\Scratch\\notebooks\\wandb\\run-20241116_163708-mvh6b0kt\\logs\\debug-core.log"}
+{"time":"2024-11-16T16:37:25.7662365+05:30","level":"INFO","msg":"created new stream","id":"mvh6b0kt"}
+{"time":"2024-11-16T16:37:25.768244+05:30","level":"INFO","msg":"stream: started","id":"mvh6b0kt"}
+{"time":"2024-11-16T16:37:25.768244+05:30","level":"INFO","msg":"handler: started","stream_id":"mvh6b0kt"}
+{"time":"2024-11-16T16:37:25.768244+05:30","level":"INFO","msg":"sender: started","stream_id":"mvh6b0kt"}
+{"time":"2024-11-16T16:37:25.768244+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"mvh6b0kt"}
+{"time":"2024-11-16T16:37:32.6238824+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-16T16:47:43.4421929+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-16T16:47:43.4448576+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-16T16:47:44.345147+05:30","level":"WARN","msg":"No job ingredients found, not creating job artifact"}
+{"time":"2024-11-16T16:47:44.3500472+05:30","level":"WARN","msg":"No source type found, not creating job artifact"}
+{"time":"2024-11-16T16:47:44.3508104+05:30","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-11-16T16:47:44.4780615+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.0750178}],"total_operations":1}}
+{"time":"2024-11-16T16:47:45.324854+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-16T16:47:47.4090011+05:30","level":"INFO","msg":"stream: closing","id":"mvh6b0kt"}
+{"time":"2024-11-16T16:47:47.4139255+05:30","level":"INFO","msg":"handler: closed","stream_id":"mvh6b0kt"}
+{"time":"2024-11-16T16:47:47.4149387+05:30","level":"INFO","msg":"sender: closed","stream_id":"mvh6b0kt"}
+{"time":"2024-11-16T16:47:47.4139255+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"mvh6b0kt"}
+{"time":"2024-11-16T16:47:47.4159554+05:30","level":"INFO","msg":"stream: closed","id":"mvh6b0kt"}
